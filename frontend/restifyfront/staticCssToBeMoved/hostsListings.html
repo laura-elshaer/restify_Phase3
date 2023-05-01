@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Current Reservations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=|Roboto+Sans:400,700|Playfair+Display:400,700">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      img {
+        display: block;
+        /* max-height: 190px; */
+        max-width: 190px;
+      }
+    
+
+      confirmed{
+        color: green;
+      }
+
+      pending{
+        color: yellowgreen;
+      }
+
+      declined{
+        color: red;
+      }
+
+      .overlay2{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        /* filter: blur(3px); */
+        
+        /* background-color: #008CBA; */
+      }
+
+      .container2:hover img{
+        opacity: 1;
+        filter: blur(5px);
+        
+      }
+
+      .container2:hover .overlay2{
+        opacity: 1;
+      }
+
+      /* img:hover{
+        filter: blur(3px);
+      } */
+
+      .text{
+        color: white;
+        font-weight:bolder;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <header class="site-header js-site-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-4 site-logo" data-aos="fade"><img src="images/logoyellow.jpg" width="100" height="100" class="logo"></div>
+          <div class="col-6 col-lg-8">
+
+
+            <div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- END menu-toggle -->
+
+            <div class="site-navbar js-site-navbar">
+              <nav role="navigation">
+                <div class="container">
+                  <div class="row full-height align-items-center">
+                    <div class="col-md-6 mx-auto">
+                      <ul class="list-unstyled menu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="editprof.html">Edit Profile</a></li>
+                      <li><a href="listings2.html">Listings</a></li>
+                      <li><a href="currentRes.html">Reservations</a></li>
+                      <li><a href="#">Log Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END head -->
+
+    <section class="site-hero inner-page overlay" style="background-image: url(images/travelling.jpg)" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center" data-aos="fade">
+            <h1 class="heading mb-3">Your Listings</h1>
+            <ul class="custom-breadcrumbs mb-4">
+              <li><a href="index.html">Home</a></li>
+              <li>&bullet;</li>
+              <li>Listings</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </div>
+      </a>
+    </section>
+    <!-- END section -->
+
+    
+    <section class="section">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+            <a href="listingDetails.html" class="room">
+              <figure class="img-wrap">
+                <div class="container2">
+                    <img src="images/innisfil.jpg" alt="Free website template" class="img-fluid mb-3">
+                    <div class="overlay2">
+                      <div class="text">Congrats! Your guest will be arriving tomorrow</div>
+                    </div>
+                </div>    
+              </figure>
+              <div class="p-3 text-center room-info">
+                <h2>Innisfil, Ontario</h2>
+                <span class="text-uppercase letter-spacing-1"><confirmed>Confirmed! Contact Guest</confirmed> </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+            <a href="#" class="room">
+              <figure class="img-wrap">
+                <div class="container2">
+                  <img src="images/tobermorey.jpg" alt="Free website template" class="img-fluid mb-3">
+                  <div class="overlay2">
+                    <div class="text">This property is currently ocupied until 23/02/12</div>
+                  </div>
+                </div>
+              </figure>
+              <div class="p-3 text-center room-info">
+                <h2>Tobermory, Ontario</h2>
+                <span class="text-uppercase letter-spacing-1"><pending>currently Occupied</pending></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+            <a href="#" class="room">
+              <figure class="img-wrap">
+                <div class="container2">
+                  <img src="images/orilla.jpg" alt="Free website template" class="img-fluid mb-3">
+                  <div class="overlay2">
+                    <div class="text">
+                      This property is up for grabs still!
+                    </div>
+                  </div>
+                </div>
+                
+              </figure>
+              <div class="p-3 text-center room-info">
+                <h2>Orilla, Ontario</h2>
+                <span class="text-uppercase letter-spacing-1"><declined>Unoccupied!</deckubed></span>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section class="section bg-image overlay" style="background-image: url('images/hero_4.jpg');">
+      <div class="container" >
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
+            <h2 class="text-white font-weight-bold">A Best Place To Stay. Reserve Now!</h2>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
+            <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="section footer-section">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-3 mb-5">
+            <ul class="list-unstyled link">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              
+            </ul>
+          </div>
+          
+          <div class="col-md-3 mb-5 pr-md-5 contact-info">
+            <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
+            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span> <span>21 Queen Street, <br> Suite 721 Toronto ON MGT0D2</span></p>
+            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span> <span>
+              (+1) 647-766-1066</span></p>
+            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span>
+              restify@asltravels.com</span></p>
+          </div>
+          <div class="col-md-3 mb-5">
+            <p>Sign up for our newsletter</p>
+            <form action="#" class="footer-newsletter">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email...">
+                <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    
+    <script src="js/aos.js"></script>
+    
+    <script src="js/bootstrap-datepicker.js"></script> 
+    <script src="js/jquery.timepicker.min.js"></script> 
+
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

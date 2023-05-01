@@ -1,0 +1,51 @@
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.property-card {
+  margin: 20px;
+  padding: 20px;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.pagination button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 15px; /* Increase the margin to add more space between buttons and text */
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination span {
+  margin: 0 15px; /* Add margin to the text to create more space around it */
+}

@@ -1,0 +1,30 @@
+   .reservation-form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  .new {
+   
+    background: url('reserve.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+
+  }
+  .create{
+    
+    background-color: black;
+    color: white;
+  
+}
+
+  .reservation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+    
+  

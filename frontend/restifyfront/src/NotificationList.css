@@ -1,0 +1,83 @@
+/* Style for the notifications list container */
+.notification-container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pagination button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Style for the notifications list title */
+.notification-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style for the notifications list */
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each notification item */
+.notification-item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Style for the notification item message */
+.notification-message {
+  margin: 0;
+  text-align: center;
+}
+.clear-button {
+  background-color: #d83b01;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #c33a00;
+}
+no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.notification-box {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
